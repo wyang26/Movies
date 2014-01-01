@@ -65,7 +65,6 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-//    [searchBar resignFirstResponder];
     [self searchMoviesUsingText:searchBar.text];
 }
 
