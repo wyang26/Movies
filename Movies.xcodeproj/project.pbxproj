@@ -18,8 +18,6 @@
 		39D4939D1870133200F0D6A7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D4939C1870133200F0D6A7 /* XCTest.framework */; };
 		39D4939E1870133200F0D6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D4937D1870133200F0D6A7 /* Foundation.framework */; };
 		39D4939F1870133200F0D6A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D493811870133200F0D6A7 /* UIKit.framework */; };
-		39D493A71870133200F0D6A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39D493A51870133200F0D6A7 /* InfoPlist.strings */; };
-		39D493A91870133200F0D6A7 /* MoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D493A81870133200F0D6A7 /* MoviesTests.m */; };
 		39D493B4187013D800F0D6A7 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D493B3187013D800F0D6A7 /* Movie.m */; };
 		39D493B7187015CC00F0D6A7 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D493B6187015CC00F0D6A7 /* MovieTableViewController.m */; };
 		39D493BF18703B8700F0D6A7 /* MovieRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D493BE18703B8700F0D6A7 /* MovieRequester.m */; };
@@ -53,9 +51,6 @@
 		39D493951870133200F0D6A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39D4939B1870133200F0D6A7 /* MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D4939C1870133200F0D6A7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		39D493A41870133200F0D6A7 /* MoviesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoviesTests-Info.plist"; sourceTree = "<group>"; };
-		39D493A61870133200F0D6A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		39D493A81870133200F0D6A7 /* MoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesTests.m; sourceTree = "<group>"; };
 		39D493B2187013D800F0D6A7 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		39D493B3187013D800F0D6A7 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		39D493B5187015CC00F0D6A7 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				39D493831870133200F0D6A7 /* Movies */,
-				39D493A21870133200F0D6A7 /* MoviesTests */,
 				39D4937C1870133200F0D6A7 /* Frameworks */,
 				39D4937B1870133200F0D6A7 /* Products */,
 				735E93C7D9E84F9B9CC2F023 /* Pods.xcconfig */,
@@ -149,24 +143,6 @@
 				39D493861870133200F0D6A7 /* InfoPlist.strings */,
 				39D493891870133200F0D6A7 /* main.m */,
 				39D4938B1870133200F0D6A7 /* Movies-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		39D493A21870133200F0D6A7 /* MoviesTests */ = {
-			isa = PBXGroup;
-			children = (
-				39D493A81870133200F0D6A7 /* MoviesTests.m */,
-				39D493A31870133200F0D6A7 /* Supporting Files */,
-			);
-			path = MoviesTests;
-			sourceTree = "<group>";
-		};
-		39D493A31870133200F0D6A7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				39D493A41870133200F0D6A7 /* MoviesTests-Info.plist */,
-				39D493A51870133200F0D6A7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -297,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D493A71870133200F0D6A7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D493A91870133200F0D6A7 /* MoviesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,14 +357,6 @@
 				39D493901870133200F0D6A7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		39D493A51870133200F0D6A7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39D493A61870133200F0D6A7 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
